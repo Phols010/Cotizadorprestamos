@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitud de Préstamo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Solicitud de Préstamo</h2>
+    <div class="slider-container">
+        <label for="loanAmount">Monto del Préstamo:</label>
+        <input type="range" min="1000" max="10000" value="5000" class="slider" id="loanAmount">
+        <span id="loanAmountOutput">$5000</span>
+    </div>
+    <div class="slider-container">
+        <label for="loanDuration">Duración del Préstamo (meses):</label>
+        <input type="range" min="6" max="36" value="12" class="slider" id="loanDuration">
+        <span id="loanDurationOutput">12 meses</span>
+    </div>
+    <div class="result">
+        <label for="monthlyPayment">Pago Mensual:</label>
+        <span id="monthlyPayment">$416.67</span>
+    </div>
+    <div class="result">
+        <label for="totalPayment">Total a Pagar:</label>
+        <span id="totalPayment">$5000</span>
+    </div>
+    <button onclick="submitLoanRequest()">Enviar Solicitud</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
